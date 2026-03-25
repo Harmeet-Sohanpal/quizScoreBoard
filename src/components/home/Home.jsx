@@ -86,8 +86,8 @@ const Home = () => {
                             <div className='flex items-center text-3xl justify-between'>
                                 <p className='bg-blue-600 p-2 text-white rounded-lg'>Team {v.team}</p>
                                 <div className='flex gap-2'>
-                                    <div className='flex cursor-pointer text-white items-center h-10 w-10 justify-center rounded-full overflow-hidden bg-black/80'><FaPlus className='text-xl' onClick={() => handleIncrement(v.id)} /></div>
-                                    <div className='flex cursor-pointer text-white items-center h-10 w-10 justify-center rounded-full overflow-hidden bg-black/80'><FaMinus className='text-xl' onClick={() => handleDecrement(v.id)} /></div>
+                                    <div onClick={() => handleIncrement(v.id)} className='flex cursor-pointer text-white items-center h-10 w-10 justify-center rounded-full overflow-hidden bg-black/80'><FaPlus className='text-xl'  /></div>
+                                    <div onClick={() => handleDecrement(v.id)} className='flex cursor-pointer text-white items-center h-10 w-10 justify-center rounded-full overflow-hidden bg-black/80'><FaMinus className='text-xl'  /></div>
                                 </div>
                             </div>
                             <div className='text-3xl mt-3'><p>Score: {v.score}</p></div>
